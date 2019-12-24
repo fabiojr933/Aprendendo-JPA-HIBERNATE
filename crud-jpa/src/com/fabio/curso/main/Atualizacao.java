@@ -10,7 +10,7 @@ public class Atualizacao {
 
 	public static void main(String[] args) {
 		
-		//METEDO ATUALIZAR
+		//METEDO ATUALIZAR.
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemplo");
 		EntityManager em = emf.createEntityManager();
 		
