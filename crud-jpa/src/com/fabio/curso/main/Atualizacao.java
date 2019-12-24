@@ -4,16 +4,15 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-import com.fabio.curso.modelo.Cliente;
+import modelo.Cliente;
 
 public class Atualizacao {
 
 	public static void main(String[] args) {
-		
-		//METEDO ATUALIZAR
+		// METEDO ATUALIZAR.
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemplo");
 		EntityManager em = emf.createEntityManager();
-		
+
 		Cliente cliente = em.find(Cliente.class, 1L);
 		em.getTransaction().begin();
 		cliente.setNome("Fabio Junior Pereira");
